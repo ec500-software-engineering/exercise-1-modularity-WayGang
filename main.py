@@ -38,13 +38,11 @@ alert = Alert_module.Alert()
 
 for i in range(len(Bo)):
     alert.Alert_for_three_categories_input([Bo[i],0])
-    UI.alert_out(alert.Alert_Output())
 for i in range(len(Bp)):
     alert.Alert_for_three_categories_input([Bp[i],1])
-    UI.alert_out(alert.Alert_Output())
 for i in range(len(Pul)):
     alert.Alert_for_three_categories_input([Pul[i],2])
-    UI.alert_out(alert.Alert_Output())
+UI.alert_out(alert.Alert_Output())
 
 #print('debug1')
 AI = AiModule.AiModule()
