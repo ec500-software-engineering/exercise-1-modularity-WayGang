@@ -71,20 +71,19 @@ if __name__ == '__main__':
         Bo.append(s.read('bo'))
         Bp.append(s.read('bp'))
         Pul.append(s.read('pul'))
-    try:
-        p1 = Queue()
-        p2 = Queue()
-        p3 = Queue()
 
-        t1 = threading.Thread(target=process1, args=(p1,))
-        t2 = threading.Thread(target=process2, args=(p2,))
-        t3 = threading.Thread(target=process3, args=(p3,))
+    p1 = Queue()
+    p2 = Queue()
+    p3 = Queue()
 
-        t1.start()
-        t2.start()
-        t3.start()
-    except:
-       print("Error: cannot process this thread.")
+    t1 = threading.Thread(target=process1, args=(p1,))
+    t2 = threading.Thread(target=process2, args=(p2,))
+    t3 = threading.Thread(target=process3, args=(p3,))
+
+    t1.start()
+    t2.start()
+    t3.start()
+
 
 
 
