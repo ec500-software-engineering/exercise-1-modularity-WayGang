@@ -1,5 +1,4 @@
 # Copyright 2018 Gang Wei wg0502@bu.edu
-
 '''
 In this prototype.py, we choose to use Wenjie Luo's Alert module,. Kainan Liu's Input module, Xiang Li's AI Module,
 Shilu Wu's User Interface module and my Storage module.
