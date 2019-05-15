@@ -10,3 +10,11 @@ The architecture of this system:
 Run this, the result is:
 ![image](https://github.com/ec500-software-engineering/exercise-1-modularity-WayGang/blob/master/modularity.png)
 
+As you can see from this result, all the modules will start together, and processing respectively.
+Assuming that:
+
+the AI model will produce the result slower than other modules;
+the Alert system should check every data and it could take a while;
+the storage sysyem seems the fastest one.
+
+The result shows the importance of multi-threading in this program.
