@@ -44,7 +44,7 @@ class Alert():
         get data for each type from database.
         format:
             (double value,int type)
-        """
+        
         if len(self.average_list[data_in[1]]) < 20:
             self.average_list[data_in[1]].append(float(data_in[0]))
         else:
@@ -57,3 +57,4 @@ class Alert():
             self.alert_flag = self.exceed_threshold(numpy.mean(self.average_list[data_in[1]]),'bp')
         if len(self.average_list[2]) > 2 and self.exceed_threshold(numpy.mean(self.average_list[2]),'pul') != -1:
             self.alert_flag = self.exceed_threshold(numpy.mean(self.average_list[data_in[1]]),'pul')
+        """
