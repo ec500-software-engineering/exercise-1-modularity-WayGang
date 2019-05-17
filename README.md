@@ -22,7 +22,7 @@ The result shows the importance of multi-threading in this program.
 
 If we run the singlethread.py, which means the system is no more multi-threaded:
 this is the result:
-![image]()
+![image](https://github.com/ec500-software-engineering/exercise-1-modularity-WayGang/blob/master/singlethread.png)
 as we can see in this picture:
 
 Every module of this system starts processing in an order, which is not what we want;
