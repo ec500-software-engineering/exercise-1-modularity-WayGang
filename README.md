@@ -18,3 +18,13 @@ the Alert system should check every data and it could take a while;
 the storage sysyem seems the fastest one.
 
 The result shows the importance of multi-threading in this program.
+
+
+If we run the singlethread.py, which means the system is no more multi-threaded:
+this is the result:
+![image]()
+as we can see in this picture:
+
+Every module of this system starts processing in an order, which is not what we want;
+
+Every module of this system has to processing in one run, for example, sometimes we don't need to alert or AI prediction, but it is all in one run, which is not what we want.
